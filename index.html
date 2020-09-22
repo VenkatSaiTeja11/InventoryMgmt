@@ -20,18 +20,41 @@
         body{
             font-family: Vollkorn, serif;
             font-size: 1.3em;
-            background:#fbe8a6;
         }
 
+        #logo {
+            position:relative;
+            left:20px;
+            width:100px;
+            height: auto;
+          }
+
+        .head1{
+            font-family:'Bangers';
+            text-align: center;
+            color:rgb(0,0,0);
+
+        }
+
+        .emphasis_p{
+            font-weight: bold;
+            font-size:1.2em;
+        }
+
+        h2{
+            font-size:190%;
+        }
+        
+        #privacy{
+            margin-top:2%;
+            background: linear-gradient(30deg,#dcdcdc,#ffffff);
+            padding:1% 0% 1% 0%;
+        }
+        
         .nav-addBackground{
             padding: 5px 10px;
-            background:  #dbae0a;
+            background:#008ecc;
             transition: all 1s;
-        }
-
-        /* margin for section-1 */
-        .margin{
-            margin-top: 12%;
         }
         
         .text,.signUp-text{
@@ -41,9 +64,9 @@
         .signUp-text:hover{
             transform: scale(1.1,1.1);
         }
+
         .section-1{
-            background: #fbe8a6;
-            padding-bottom: 1%;
+            padding:8%;
         }
         /* rounded borders for SignUp */
         li{
@@ -160,7 +183,7 @@
             }
             nav ul li a span {
                 position: absolute;
-                width: 25%;
+                width: 30%;
                 height: 100%;
                 background-color: var(--c);
                 transform: translateY(150%);
@@ -196,15 +219,19 @@
             .signup:hover{
                 transform: scale(1.1,1.1);
             }
+            
             .featuredesc1{
-                background: #fbe8a6;  /* fallback for old browsers */
-                background: -webkit-linear-gradient(to right, #fbe8a6, #f4976c);  /* Chrome 10-25, Safari 5.1-6 */
-                background: linear-gradient(to right, #fbe8a6, #f4976c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+                background: #ffffff;  /* fallback for old browsers */
+                background: -webkit-linear-gradient(to right, #ffffff,#dcdcdc);  /* Chrome 10-25, Safari 5.1-6 */
+                background: linear-gradient(to right, #ffffff,#dcdcdc); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+                padding:1%;
             }
+            
             .featuredesc2{
-                background: #fbe8a6;  /* fallback for old browsers */
-                background: -webkit-linear-gradient(to left,#fbe8a6,#f4976c);  /* Chrome 10-25, Safari 5.1-6 */
-                background: linear-gradient(to left,#fbe8a6,#f4976c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+                background: #ffffff;  /* fallback for old browsers */
+                background: -webkit-linear-gradient(to left,#ffffff,#dcdcdc);  /* Chrome 10-25, Safari 5.1-6 */
+                background: linear-gradient(to left,#ffffff,#dcdcdc); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+                padding:1%;
             }
         }
         @media only screen and (max-width: 992px){
@@ -243,33 +270,7 @@
                 display: none;
             }
         }
-        #logo {
-            position:relative;
-                  left:20px;
-                  width:100px;
-                  height: auto;
-          }
-
-        .head1{
-            font-family:'Bangers';
-            text-align: center;
-            color:rgb(0,0,0);
-        }
-
-        .emphasis_p{
-            font-weight: bold;
-            font-size:1.2em;
-        }
-
-        h2{
-            font-size:190%;
-        }
-
-        #privacy{
-            margin-top:2%;
-            background: linear-gradient(60deg, #99faff, #b4dfe5);
-            padding:1% 0% 1% 0%;
-        }
+        
 
     </style>
 </head>
@@ -277,7 +278,7 @@
     <!-- pre-loader -->
     <div id="loading" class="text-center"></div>
 
-    <img class="scroll-top move-up scrolltop img-fluid" src="https://daks2k3a4ib2z.cloudfront.net/591b0c3a951d120c3f468711/593a0036cd8a6e16f1869dca_icon.svg" />
+    <img class="scroll-top move-up scrolltop img-fluid" src="https://daks2k3a4ib2z.cloudfront.net/591b0c3a951d120c3f468711/593a0036cd8a6e16f1869dca_icon.svg" /> 
     
     
     <!-- <img class="scroll-top move-up" src="https://img.icons8.com/cute-clipart/64/000000/up-squared.png"/> -->
@@ -285,7 +286,7 @@
     <header>
         <nav class="navbar navbar-expand-md navbar-light fixed-top" id="navbar">
           <!-- Brand logo-->
-          <a class="navbar-brand text-dark" href=""><img class="img-fluid rounded" id="logo" src="logo.jpg" alt="logo" /></a>
+         <a class="navbar-brand text-dark" href="logo.jpg"><img class="img-fluid rounded" id="logo" src="logo.jpg" alt="logo" /></a>
         
           <!-- Toggler/collapsibe Button -->
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
@@ -316,20 +317,17 @@
     </header>
     <!-- End of Nav-Bar -->
     
-    <!--class="col-lg align-self-center text-dark margin section1Margin"-->
+    
     <!-- Section-1 -->
-    <section class="section-1 margin">
-        <div class="container">
-            <div class="row">
+    <section class="section-1">
+        <div class="container pt-5">
+            <div class="row align-items-center">
                 <div class="col-md-6">
                     <img class="img-fluid rounded" src="https://i1.wp.com/blog.visitorqueue.com/wp-content/uploads/2019/08/Untitled-2-01.png?fit=720%2C440&ssl=1" alt="Img"/>
                 </div>
-                <div class="col-md-4">
-                    <h1 class="display-3 head1">Inventory Management Application</h1>
+                <div class="col-md-6">
+                    <h1 class="display-1 head1">Inventory Management Application</h1>
                 </div>
-                <!--<div class="col-lg text-dark text-center margin">
-                    <img class="img-fluid rounded" src="images/image1.jpg" alt="image" />
-                </div> -->
             </div>
 
             <div class="row">
@@ -348,16 +346,11 @@
                     <button class="signUp-text btn" style="background: #ffcb05"> Sign Up For Free! </button>
                 </div> -->
         </div>
-        <span class="d-none d-md-block"><br>
-        <br></span>
     </section>
     <!-- End of Section-1 -->
-
-    <section class="section-1">
-        <div class="container text-center">
-            <h3>Wondering what it is? Let's dive in!</h3>
-        </div>
-    </section>
+    <div class="container text-center">
+        <h3>Wondering what it is? Let's dive in!</h3>
+    </div>   
 
 
     <!-- Modal for login-->
@@ -429,7 +422,7 @@
 
 
     <!-- Section-2 -->
-    <section class="featuredesc1">
+    <section class="featuredesc1 mt-5">
         <br>
         <div class="container col-10">
             <div class="row">
@@ -448,7 +441,7 @@
 
 
     <!-- Section-3 -->
-    <section class="featuredesc2">
+    <section class="featuredesc2 mt-4">
         <br>
         <div class="container col-10">
             <div class="row">
@@ -469,7 +462,7 @@
 
     <!-- Section-4 -->
     <!-- Carousel -->
-    <section class="container col-10 col-sm-10 mt-5" id="section-4">
+    <section class="container col-10 col-sm-10 mt-4" id="section-4">
         <div class="row">
             <div class="col text-center">
                 <h2 class="head1">Sales Analysis</h2>
@@ -524,29 +517,29 @@
         <br>
         <div class="container col-10">
             <div class="row">
-                <div class="col-md">
-                    <img class="img-fluid" src="https://lh3.googleusercontent.com/proxy/ACFJlGj6ofYJFAFJWoqO-GhFTaKzbhLROh5HcAFYZOWvHEXViCbwMMk3qfL3Esmf0T_iudaikq3-d72U_soQgch29DfNLsR_lG-aJAcM4u-1">
-                </div>
                 <div class="col-md align-self-center heading-1">
                     <h2 class="head1">Billing</h2>
                     <p class="emphasis_p">Did you think this is just an inventorying application?</p>
                     <p>You will be able to generate invoices to your customers at the time of transcations using the same application that you use for inventorying! Eliminating the need for another software.</p>
                 </div>
+                <div class="col-md">
+                    <img class="img-fluid" src="https://lh3.googleusercontent.com/proxy/ACFJlGj6ofYJFAFJWoqO-GhFTaKzbhLROh5HcAFYZOWvHEXViCbwMMk3qfL3Esmf0T_iudaikq3-d72U_soQgch29DfNLsR_lG-aJAcM4u-1">
+                </div>
             </div>
         </div>
     </section>
 
-    <section class="featuredesc2">
+    <section class="featuredesc2 mt-4">
         <br>
         <div class="container col-10">
             <div class="row">
+                <div class="col-md">
+                    <img class="img-fluid" src="https://www.escapetech.com/eol5links/documentation/Content/Resources/Images/Finance/StoresInventory.jpg" alt="image">
+                </div>
                 <div class="col-md align-self-center heading-1">
                     <h2 class="head1">Order products directly from the manufacturers</h2>
                     <p class="emphasis_p">Make note manufacturers, no more middle men!</p>
                     <p>If you are a store owner and running low on a specific product, you will be able order that product directly from the respective manufacturers.</p>
-                </div>
-                <div class="col-md">
-                    <img class="img-fluid" src="https://www.escapetech.com/eol5links/documentation/Content/Resources/Images/Finance/StoresInventory.jpg" alt="image">
                 </div>
             </div>
         </div>
@@ -566,11 +559,11 @@
 
     <!-- Footer -->
     <footer id="contactus" class="contact mt-5">
-            <div class="container col-10">
+            <div class="container col-10 pt-2">
                 <div class="row">
                     <div class="col">
-                        <h2 class="text-white text-center">Contact Us</h2>
-                        <p class="text-white text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut esse architecto excepturi quae deserunt suscipit quidem perferendis, corporis dolore voluptatibus blanditiis laudantium temporibus adipisci voluptas. Vitae, magni aut. Illo, sunt.</p>
+                        <h2 class="text-white text-center head1">Contact Us</h2>
+                        <p class="text-white text-center">Any Queries?<br/>Feel free to contact us!</p>
                     </div>
                 </div>
                 <div class="container col-md-5 col">
